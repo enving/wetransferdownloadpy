@@ -3,9 +3,8 @@ Is using a crawler without need to install a webbrowser driver which makes is ea
 
 ##see full code in main.py
 
-# Wetransferpy
 
-**Wetransferpy** is a simple Python package designed to facilitate the downloading of videos from WeTransfer using Playwright. This package abstracts the complexities of interacting with the WeTransfer website, allowing users to easily download files with just a few lines of code.
+**wetransferdownloadpy** is a simple Python package designed to facilitate the downloading of videos from WeTransfer using Playwright. This package abstracts the complexities of interacting with the WeTransfer website, allowing users to easily download files with just a few lines of code.
 
 ## Features
 
@@ -22,30 +21,12 @@ pip install Wetransferpy
 
 ### Dependencies
 
-Wetransferpy requires the following packages:
+Wetransferdownloadpy requires the following packages:
 
 - `playwright`: For browser automation.
 - `aiohttp`: For asynchronous HTTP requests.
 - `asyncio`: For managing asynchronous operations.
 - `requests`: For making HTTP requests.
-
-You can install these dependencies automatically by running:
-
-
-pip install -r requirements.txt
-
-
-
-## Usage
-
-Here’s a quick example of how to use Wetransferpy to download a video:
-
-python
-from wetransferpy.downloader import WeTransferDownloader
-downloader = WeTransferDownloader()
-video_path = await downloader.download_video("https://we.tl/t-UljX552m1s")
-print(f"Video downloaded: {video_path}")
-
 
 
 ## Important Notes
