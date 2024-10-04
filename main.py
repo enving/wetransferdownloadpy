@@ -8,7 +8,7 @@ class WeTransferDownloader:
         os.makedirs(self.download_dir, exist_ok=True)
 
     async def download_video(self, video_link: str) -> str:
-        temp_file_name = f"temp_video_{int(time.time())}.mp4"
+        temp_file_name = f"temp_video_{int(time.time())}.mp4"   #i downloaded a video...but you can transfer any file or make it more general
         temp_file_path = os.path.join(self.download_dir, temp_file_name)
 
         try:
